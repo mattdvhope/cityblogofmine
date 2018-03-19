@@ -1,0 +1,13 @@
+---
+layout: page
+title: Cookies
+---
+{% for cookie in site.cookies %}
+  <div class="cookie">
+    <h2>
+      {{ cookie.title }}
+    </h2>
+    <img src="{{ cookie.image_path }}" alt="{{ cookie.title }}">
+    {{ cookie.content }}
+  </div>
+{% endfor %}

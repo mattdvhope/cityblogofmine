@@ -1,0 +1,27 @@
+---
+layout: page
+title: Test Page
+permalink: /test-pages/test-page/
+---
+
+<h1>Hello from TEST PAGE!!!</h1>
+
+<img src="/assets/img/cep_on_bench.jpg" alt="">
+
+
+{% for item in site.my_collection %}
+  <h2>{{ item.title }}</h2>
+  <p>{{ item.description }}</p>
+  <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+{% endfor %}
+
+
+<ul>
+{% for member in site.data.members %}
+  <li>
+    <a href="https://github.com/{{ member.github }}">
+      {{ member.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
