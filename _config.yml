@@ -49,6 +49,8 @@ defaults:
 collections:
 - cookies
 
+include: ["_redirects"]
+
 error_mode: warn # Liquid’s response to errors (lax, warn or strict)
 
 timezone: Asia/Bangkok
