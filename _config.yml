@@ -25,7 +25,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 destination: public
-source: src
+source: src/assets/build
 
 # front matter defaults
 defaults:
