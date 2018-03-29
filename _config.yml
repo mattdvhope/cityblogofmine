@@ -24,6 +24,9 @@ url: "" # set to production site: i.e., "https://cityenglishproject.com"
 twitter_username: jekyllrb
 github_username:  jekyll
 
+destination: public
+source: src
+
 # front matter defaults
 defaults:
   -
@@ -64,10 +67,10 @@ plugins:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
